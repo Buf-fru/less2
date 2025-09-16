@@ -1,7 +1,6 @@
 import socket
 
-#HOST = socket.gethostname()
-#print(HOST)
+
 users= {}
 HOST = ('127.0.0.1', 2234)
 sock= socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -40,4 +39,5 @@ while 1:
     print(data)
 
 print('-----stop-----')
+
 sock.close()
